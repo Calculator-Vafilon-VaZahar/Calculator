@@ -3,11 +3,11 @@
 #include<cmath>
 
 Operation askForOperation(string);
-double askForNumber();
+int askForNumber();
 bool isUnary(Operation);
-double applyUnaryOperation(Operation, double x);
-double applyBinaryOperation(Operation, double a, double b);
-void printResult(double);
+int applyUnaryOperation(Operation, int x);
+int applyBinaryOperation(Operation, int a, int b);
+void printResult(int res);
 
 int main() {
     while (true) {
@@ -15,14 +15,14 @@ int main() {
         if (operation == Exit) {
             exit(0);
         }
-        double result;
+        int result;
         if (isUnary(operation)) {
-            const double x = askForNumber();
+            const int x = askForNumber();
             result = applyUnaryOperation(operation, x);
         }
         else {
-            const double a = askForNumber();
-            const double b = askForNumber();
+            const int a = askForNumber();
+            const int b = askForNumber();
             result = applyBinaryOperation(operation, a, b);
         }
         printResult(result);

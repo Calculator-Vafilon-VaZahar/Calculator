@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+//1
 using namespace std;
 enum Art{
     Arithmetical = 1,
@@ -21,7 +21,7 @@ enum Operation {
 	Pow = 9,
 	Exit1 = 0,
 	Remainder = 10,
-	unary_plus = 11,
+	unary_plus = 11,git
 	unary_minus = 5,
 };
 // arithmetical functions

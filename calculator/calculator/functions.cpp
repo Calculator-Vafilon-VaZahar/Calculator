@@ -1,6 +1,7 @@
 #include "functions.h"
 #include<iostream>
 #include<stdlib.h>
+//2
 using namespace std;
 Art AskForArtOfOperation() {
     int art_of_operation;

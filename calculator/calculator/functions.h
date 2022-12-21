@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
-
+// Ваня хуй
+// Add trigonometry
 using namespace std;
 enum Operation {
     //arithmetical

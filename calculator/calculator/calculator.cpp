@@ -1,21 +1,12 @@
-﻿#include <iostream>
-#include "functions.h"   
-#include<cmath>
+﻿#include "functions.cpp"
 
-Operation askForOperation(string);
-int askForNumber();
-bool isUnary(Operation);
-int applyUnaryOperation(Operation, int x);
-int applyBinaryOperation(Operation, int a, int b);
-void printResult(int res);
-
-int main() {
+int main(){
     while (true) {
         const Operation operation = askForOperation();
         if (operation == Exit) {
             exit(0);
         }
-        int result;
+        double result;
         if (isUnary(operation)) {
             const int x = askForNumber();
             result = applyUnaryOperation(operation, x);
@@ -27,8 +18,8 @@ int main() {
         }
         printResult(result);
     }
+    return 0;
 }
-
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
 
